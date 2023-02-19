@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <section class="cart-section container">
 
@@ -16,52 +18,75 @@
                     <img src="./images/triangle.png" alt="">
                     <h2>Triangle</h2>
                     <p>Area (A) = 0.5 * b * h</p>
-                    <input class="input-field" type="number"> <span>cm</span> <input class="input-field" type="number"> <span>cm</span>
-                    <button class="main-btn" type="button">Calculate</button>
+                    <input autocomplete="off" id="triangleB" placeholder="Base" class="input-field" type="number">
+                    <span>cm</span>
+                    <input autocomplete="off" id="triangleH" class="input-field" placeholder="Height" type="number">
+                    <span>cm</span>
+                    <button id="triangleBtn" class="main-btn" type="button">Calculate</button>
                 </div>
                 <div class="cart">
                     <img src="./images/rectangle.png" alt="">
                     <h2>Rectangle</h2>
                     <p>Area (A) = w * I</p>
-                    <input class="input-field" type="number"> <span>cm</span> <input class="input-field" type="number"> <span>cm</span>
-                    <button class="main-btn" type="button">Calculate</button>
+                    <input autocomplete="off" id="rectangleH" class="input-field" type="number"><span>cm</span>
+                    <input autocomplete="off" id="rectangleB" class="input-field" type="number">
+                    <span>cm</span>
+                    <button id="rectangleBtn" class="main-btn" type="button">Calculate</button>
                 </div>
                 <div class="cart">
                     <img src="./images/parallelogram.png" alt="">
                     <h2>Parrallelogram</h2>
                     <p>Area (A) = b * h</p>
-                    <h4>b=10cm, h=12cm</h4>
-                    <button class="main-btn" type="button">Calculate</button>
+                    <input autocomplete="off" id="parallelogramB" class="input-field" type="number">
+                    <span>cm</span>
+                    <input autocomplete="off" id="parallelogramH" class="input-field" type="number">
+                    <span>cm</span>
+                    <button id="parallelogramBtn" class="main-btn" type="button">Calculate</button>
                 </div>
                 <div class="cart">
                     <img src="./images/rhombus.png" alt="">
                     <h2>Rhombus</h2>
                     <p>Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
-                    <input class="input-field" type="number"> <span>cm</span> <input class="input-field" type="number"> <span>cm</span>
-                    <button class="main-btn" type="button">Calculate</button>
+                    <input id="rhombusD1" autocomplete="off" class="input-field" type="number"> <span>cm</span>
+                    <input id="rhombusD2" autocomplete="off" class="input-field" type="number">
+                    <span>cm</span>
+                    <button id="rhombusBtn" class="main-btn" type="button">Calculate</button>
                 </div>
                 <div class="cart">
                     <img src="./images/pentagon.png" alt="">
                     <h2>Pentagon</h2>
                     <p>Area (A) = 0.5 * p * b</p>
-                    <input class="input-field" type="number"> <span>cm</span> <input class="input-field" type="number"> <span>cm</span>
-                    <button class="main-btn" type="button">Calculate</button>
+                    <input id="pentagonP" autocomplete="off" class="input-field" type="number"> <span>cm</span>
+                    <input id="pentagonB" autocomplete="off" class="input-field" type="number">
+                    <span>cm</span>
+                    <button id="pentagonBtn" class="main-btn" type="button">Calculate</button>
                 </div>
                 <div class="cart">
                     <img src="./images/ellipse.png" alt="">
                     <h2>Ellipse</h2>
-                    <p>Area (A) =  PI ab</p>
-                    <input class="input-field" type="number"> <span>cm</span> <input class="input-field" type="number"> <span>cm</span>
-                    <button class="main-btn" type="button">Calculate</button>
+                    <p>Area (A) = PI ab</p>
+                    <input id="ellipseA" autocomplete="off" class="input-field" type="number"> <span>cm</span>
+                    <input id="ellipseB" autocomplete="off" class="input-field" type="number">
+                    <span>cm</span>
+                    <button id="ellipseBtn" class="main-btn" type="button">Calculate</button>
                 </div>
             </div>
             <div class="sidebar">
                 <div class="side-cart">
                     <h2>Area Calculation</h2>
+                    <table id="areaTable">
+
+                    </table>
                 </div>
             </div>
         </div>
 
     </section>
+
+
+
+    <!-- <script src="./custom.js"></script> -->
+    <script src="./script.js"></script>
 </body>
+
 </html>
