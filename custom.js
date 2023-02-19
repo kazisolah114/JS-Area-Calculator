@@ -17,7 +17,7 @@ const getArea = (shape, options) => {
     const value1 = parseInt(optionsA)
     const value2 = parseInt(optionsB)
 
-    // calculate the area
+    // calculate the areas
 
     const calculateArea = () => {
         switch (shape) {
